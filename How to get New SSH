@@ -1,0 +1,8 @@
+
+avant de lancer cette commande etre sur d'etre dans le repertoire a la racine du C: 
+
+ca va generer un dossier cache qui s'apelle .ssh
+
+
+
+ssh-keygen -t rsa -b 4096 -C jpdorsaz@gmail.com 
