@@ -1,8 +1,30 @@
 
-avant de lancer cette commande etre sur d'etre dans le repertoire a la racine du C: 
+Avant de lancer cette commande il etre sur d'etre dans le repertoire a la racine du C: 
 
-ca va generer un dossier cache qui s'apelle .ssh
+la commande suivante va generer un dossier cache qui s'apelle .ssh:
 
+	ssh-keygen -t rsa -b 4096 -C jpdorsaz@gmail.com 
 
+Faire un ls -la pour voir le fichier 
 
-ssh-keygen -t rsa -b 4096 -C jpdorsaz@gmail.com 
+rentrer dans le dossier et faire un CAT du fichier .pub
+
+copier la clef et la coller sur github dans : 
+	- setting 
+	- SSH et GPG keys 
+	- New ssh key 
+	- mettre en titre le nom de la machine
+	
+
+rappel commandes qui sont sur github : 
+
+	echo "# piscine" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin git@github.com:BillinWonderland/piscine.git
+	git push -u origin main
+	
+	
+	
